@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="something," />
+  <meta name="keywords" content="【正则, 零宽断言】," />
 
 
 
@@ -84,18 +84,22 @@
 
 
 
-<meta name="description" content="第一次写就随便写两句好了最开始是看到 丽丽的修行之路才觉得好像一个程码不写点什么不算一个好码农似的5月份想试着自己搭个blog，正好试试react什么的，就用react+mysql在阿里云上建了个有点小烦琐，又因为手上项目就搁浅了前几天想着也和丽丽一样，索性在git上搞个静态也就好了就花了两天去看了下，jekyll看的要失去耐心 就索性也用了hexo搞了个，next的样式主题还挺好看的这博客写的我">
+<meta name="description" content="关于正则的零宽断言今天看到一个正则的问题，感觉脑子里正则的概念又有点不清楚，就打开了正则的教程看了一下注意到”零宽断言”这个概念自己完全不熟悉，就好好看了看
+零宽断言(?=exp)        匹配exp前面的位置(?&amp;lt;=exp)    匹配exp后面的位置(?!exp)        匹配后面跟的不是exp的位置(?&amp;lt;!exp)    匹配前面不是exp的位置
+1. js不支持逆向">
 <meta property="og:type" content="article">
-<meta property="og:title" content="终于基本搭建起git上的博客啦">
-<meta property="og:url" content="http://senoryan.github.io/2016/12/06/my-first-post/index.html">
+<meta property="og:title" content="关于正则的零宽断言">
+<meta property="og:url" content="http://senoryan.github.io/2016/12/18/关于正则的零宽断言/index.html">
 <meta property="og:site_name" content="SenorYan Blog">
-<meta property="og:description" content="第一次写就随便写两句好了最开始是看到 丽丽的修行之路才觉得好像一个程码不写点什么不算一个好码农似的5月份想试着自己搭个blog，正好试试react什么的，就用react+mysql在阿里云上建了个有点小烦琐，又因为手上项目就搁浅了前几天想着也和丽丽一样，索性在git上搞个静态也就好了就花了两天去看了下，jekyll看的要失去耐心 就索性也用了hexo搞了个，next的样式主题还挺好看的这博客写的我">
-<meta property="og:image" content="http://senoryan.github.io/images/img1.jpg">
-<meta property="og:updated_time" content="2016-12-08T06:32:57.000Z">
+<meta property="og:description" content="关于正则的零宽断言今天看到一个正则的问题，感觉脑子里正则的概念又有点不清楚，就打开了正则的教程看了一下注意到”零宽断言”这个概念自己完全不熟悉，就好好看了看
+零宽断言(?=exp)        匹配exp前面的位置(?&amp;lt;=exp)    匹配exp后面的位置(?!exp)        匹配后面跟的不是exp的位置(?&amp;lt;!exp)    匹配前面不是exp的位置
+1. js不支持逆向">
+<meta property="og:updated_time" content="2016-12-18T12:50:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="终于基本搭建起git上的博客啦">
-<meta name="twitter:description" content="第一次写就随便写两句好了最开始是看到 丽丽的修行之路才觉得好像一个程码不写点什么不算一个好码农似的5月份想试着自己搭个blog，正好试试react什么的，就用react+mysql在阿里云上建了个有点小烦琐，又因为手上项目就搁浅了前几天想着也和丽丽一样，索性在git上搞个静态也就好了就花了两天去看了下，jekyll看的要失去耐心 就索性也用了hexo搞了个，next的样式主题还挺好看的这博客写的我">
-<meta name="twitter:image" content="http://senoryan.github.io/images/img1.jpg">
+<meta name="twitter:title" content="关于正则的零宽断言">
+<meta name="twitter:description" content="关于正则的零宽断言今天看到一个正则的问题，感觉脑子里正则的概念又有点不清楚，就打开了正则的教程看了一下注意到”零宽断言”这个概念自己完全不熟悉，就好好看了看
+零宽断言(?=exp)        匹配exp前面的位置(?&amp;lt;=exp)    匹配exp后面的位置(?!exp)        匹配后面跟的不是exp的位置(?&amp;lt;!exp)    匹配前面不是exp的位置
+1. js不支持逆向">
 
 
 
@@ -123,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://senoryan.github.io/2016/12/06/my-first-post/"/>
+  <link rel="canonical" href="http://senoryan.github.io/2016/12/18/关于正则的零宽断言/"/>
 
 
 
 
 
-  <title> 终于基本搭建起git上的博客啦 | SenorYan Blog </title>
+  <title> 关于正则的零宽断言 | SenorYan Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -240,7 +244,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://senoryan.github.io/2016/12/06/my-first-post/">
+  <link itemprop="mainEntityOfPage" href="http://senoryan.github.io/2016/12/18/关于正则的零宽断言/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="SenorYan">
@@ -264,7 +268,7 @@
             
             
               
-                终于基本搭建起git上的博客啦
+                关于正则的零宽断言
               
             
           </h1>
@@ -277,8 +281,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-06T13:45:59+08:00">
-                2016-12-06
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-18T20:03:01+08:00">
+                2016-12-18
               </time>
             
 
@@ -296,8 +300,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/语法/" itemprop="url" rel="index">
+                    <span itemprop="name">语法</span>
                   </a>
                 </span>
 
@@ -331,7 +335,21 @@
       
 
       
-        <h4 id="第一次写就随便写两句好了"><a href="#第一次写就随便写两句好了" class="headerlink" title="第一次写就随便写两句好了"></a>第一次写就随便写两句好了</h4><p>最开始是看到 <a href="http://gismanli.github.io/blog/" target="_blank" rel="external">丽丽的修行之路</a>才觉得好像一个程码不写点什么不算一个好码农似的<br>5月份想试着自己搭个blog，正好试试react什么的，就用react+mysql在阿里云上建了个<br>有点小烦琐，又因为手上项目就搁浅了<br>前几天想着也和丽丽一样，索性在git上搞个静态也就好了<br>就花了两天去看了下，jekyll看的要失去耐心 <img src="/images/img1.jpg" alt="图片失踪啦"><br>就索性也用了hexo搞了个，next的样式主题还挺好看的<br>这博客写的我有写日记的节奏<br>暂时就这样好了</p>
+        <h2 id="关于正则的零宽断言"><a href="#关于正则的零宽断言" class="headerlink" title="关于正则的零宽断言"></a>关于正则的零宽断言</h2><p>今天看到一个正则的问题，感觉脑子里正则的概念又有点不清楚，就打开了正则的教程看了一下<br>注意到”零宽断言”这个概念自己完全不熟悉，就好好看了看</p>
+<p>零宽断言<br>(?=exp)        匹配exp前面的位置<br>(?&lt;=exp)    匹配exp后面的位置<br>(?!exp)        匹配后面跟的不是exp的位置<br>(?&lt;!exp)    匹配前面不是exp的位置</p>
+<p><em>1. js不支持逆向的，所以第二个、第四个貌似是用不了</em><br><em>2. (exp)能把匹配相捕获到组内，再用$1、$2……调用</em></p>
+<p>###例子</p>
+<ol>
+<li>/\b\w+(?=ing\b)/<br> 匹配ing前面的字符 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str = &apos;opening the door&apos;;</div><div class="line">str.match(/\b\w+(?=ing\b)/)     //[&apos;open&apos;]</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li>/\d{3}(?!\d)/g<br> 匹配三个数字，而且后面跟的不是数字 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str = &apos;1234s567d89f0&apos;;</div><div class="line">str.match(/\d&#123;3&#125;(?!\d)/g)     //[&apos;234&apos;，&apos;567&apos;]</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol>
+<li>/(\d{1,3})(?=(?:\d{3})+(?!\d))/g<br> 三个数字一断 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str = &apos;1234567890&apos;;</div><div class="line">str.replace(/(\d&#123;1,3&#125;)(?=(?:\d&#123;3&#125;)+(?!\d))/g, &apos;$1,&apos;)    //&apos;1,234,567,890&apos;</div></pre></td></tr></table></figure></li>
+</ol>
 
       
     </div>
@@ -355,7 +373,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/something/" rel="tag"># something</a>
+            <a href="/tags/【正则-零宽断言】/" rel="tag"># 【正则, 零宽断言】</a>
           
         </div>
       
@@ -364,15 +382,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/11/5min购买vps搭建shadowsocks初尝试/" rel="next" title="5分钟购买vps搭建shadowscoks初尝试">
+                <i class="fa fa-chevron-left"></i> 5分钟购买vps搭建shadowscoks初尝试
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/08/关于fetch的兼容/" rel="prev" title="关于fetch的兼容">
-                关于fetch的兼容 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -512,7 +530,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一次写就随便写两句好了"><span class="nav-number">1.</span> <span class="nav-text">第一次写就随便写两句好了</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于正则的零宽断言"><span class="nav-number">1.</span> <span class="nav-text">关于正则的零宽断言</span></a></li></ol></div>
             
 
           </div>
